@@ -1,33 +1,36 @@
 # Inertia + Django + Vite + React
 
-A minimal, working template for Inertia + Django + Vite + React.
+## установка
 
-## Technologies
+### для работы проекта необходимы: 
 
-1. Inertia - powered by the official [Inertia.js Django Adapter](https://github.com/inertiajs/inertia-django)
-2. Django v5.1.5
-3. Vite 6 - powered by [Django Vite](https://github.com/MrBin99/django-vite)
-4. TypeScript
-
-## How to install & run
-
-Install:
-
+- [UV](https://docs.astral.sh/uv/) 
+- [npm](https://nodejs.org/)
+****
+- устанавливаем проект
 ```
 make install
 make migrate
 ```
+- создаем админа
+```
+make admin
+```
+- открываем два терминала
 
-Terminal 1:
+- в первом:
 
 ```
 make start-backend
 ```
 
-Terminal 2:
+- во втором:
 
 ```
 make start-frontend
 ```
+- переходим по ссылке http://localhost:8000/admin
 
-Visit http://localhost:8000/.
+- добавляем товары
+
+- проект становится доступен по ссылке - http://localhost:8000/

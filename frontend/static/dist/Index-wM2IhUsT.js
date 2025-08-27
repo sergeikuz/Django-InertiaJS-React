@@ -1,0 +1,1 @@
+import{j as r,L as e}from"./main-C3pOrgD8.js";function d({description:s}){return r.jsxs("div",{children:[r.jsx("h1",{children:"Главная страница"}),r.jsx("p",{children:s}),r.jsx(e,{href:"/about",children:"О нас"}),r.jsx("br",{}),r.jsx(e,{href:"/products",children:"Список товаров"})]})}export{d as default};

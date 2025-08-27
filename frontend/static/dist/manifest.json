@@ -1,16 +1,18 @@
 {
   "main.tsx": {
-    "file": "main-BDSW5kVj.js",
+    "file": "main-C3pOrgD8.js",
     "name": "main",
     "src": "main.tsx",
     "isEntry": true,
     "dynamicImports": [
       "pages/About.tsx",
-      "pages/Index.tsx"
+      "pages/Index.tsx",
+      "pages/ProductDetail.jsx",
+      "pages/ProductsList.jsx"
     ]
   },
   "pages/About.tsx": {
-    "file": "About-BRXF8uyv.js",
+    "file": "About-7WWzlwCW.js",
     "name": "About",
     "src": "pages/About.tsx",
     "isDynamicEntry": true,
@@ -19,9 +21,27 @@
     ]
   },
   "pages/Index.tsx": {
-    "file": "Index-CT-WJk2e.js",
+    "file": "Index-wM2IhUsT.js",
     "name": "Index",
     "src": "pages/Index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "main.tsx"
+    ]
+  },
+  "pages/ProductDetail.jsx": {
+    "file": "ProductDetail-BQeAI0vN.js",
+    "name": "ProductDetail",
+    "src": "pages/ProductDetail.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "main.tsx"
+    ]
+  },
+  "pages/ProductsList.jsx": {
+    "file": "ProductsList-BaGIuaFm.js",
+    "name": "ProductsList",
+    "src": "pages/ProductsList.jsx",
     "isDynamicEntry": true,
     "imports": [
       "main.tsx"
