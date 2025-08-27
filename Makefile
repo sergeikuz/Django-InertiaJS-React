@@ -1,5 +1,5 @@
 install:
-	uv sync && cd frontend && uv run npm install
+	uv sync && cd frontend && npm install && npm run build
 
 migrate:
 	uv run manage.py migrate
@@ -11,5 +11,5 @@ start-backend:
 	uv run manage.py runserver
 
 start-frontend:
-	cd frontend && uv run npm run dev
+	cd frontend && npm run dev
 
