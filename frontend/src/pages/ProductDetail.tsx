@@ -1,7 +1,16 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
 
-export default function ProductDetail({ product }) {
+interface Product {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  product: Product;
+}
+
+export default function ProductDetail({ product }: Props) {
   return (
     <div className="container py-5">
       <div className="row justify-content-center">
