@@ -29,7 +29,11 @@ make start-backend
 ```
 make start-frontend
 ```
-- переходим по ссылке http://localhost:8000/admin
+- переходим по ссылке http://localhost:8000/products/create
+
+- добавляем товары через форму
+
+- или переходим по ссылке http://localhost:8000/admin
 
 - добавляем товары
 
