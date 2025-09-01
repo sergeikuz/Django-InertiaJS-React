@@ -1,4 +1,4 @@
-from django.shortcuts import redirect
+import inertia
 from django.views import View
 from django.views.generic import ListView, DetailView
 from inertia import render
@@ -75,11 +75,11 @@ class CreateProductView(View):
     def post(self, request):
         title = request.POST.get('title', '').strip()
         description = request.POST.get('description', '').strip()
-        print(
-            f"POST request to /products/create/ with data: title='{title}', description='{description}', raw POST={request.POST}")
+
         Product.objects.create(
             title=title,
             description=description
         )
-        return redirect('products_list')
+
+        return inertia.location('/products/') # ВАЖНО SPA РЕДИРЕКТ
 
