@@ -1,7 +1,8 @@
-import inertia
+
 from django.views import View
 from django.views.generic import ListView, DetailView
 from inertia import render
+from inertia import location
 from .models import Product
 import logging
 
@@ -68,6 +69,7 @@ class ProductDetailView(DetailView):
         )
 
 
+
 class CreateProductView(View):
     def get(self, request):
         return render(request, 'CreateProduct')
@@ -81,5 +83,5 @@ class CreateProductView(View):
             description=description
         )
 
-        return inertia.location('/products/') # ВАЖНО SPA РЕДИРЕКТ
+        return location('/products/') # ВАЖНО SPA РЕДИРЕКТ
 
