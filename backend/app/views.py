@@ -83,5 +83,5 @@ class CreateProductView(View):
             description=description
         )
 
-        return location('/products/') # ВАЖНО SPA РЕДИРЕКТ
+        return location('/products/') # ВАЖНО SPA РЕДИРЕКТ!
 
