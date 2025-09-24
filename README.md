@@ -64,7 +64,7 @@ make docker-migrate
 ```
 - создаем админа
 ```
-make docker-migrate
+make docker-admin
 ```
 - переходим по ссылке http://localhost:8000/products/create
 
